@@ -1,39 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>FreePlay | Play Free Browser Games</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<header>
-    <div class="logo">🎮 FreePlay</div>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Games</a>
-        <a href="#">About</a>
-    </nav>
-</header>
-
-<section class="hero">
-    <h1>Play Free Games Instantly</h1>
-    <p>No downloads. No signups. Just fun.</p>
-</section>
-
 <section class="games">
-    <h2>Featured Game</h2>
-    <div class="game-container">
+    <h2>Featured Games</h2>
+
+    <div class="game-grid">
+
+        <div class="game-card">
+            <h3>Snake Classic</h3>
+            <p>Play the classic snake game.</p>
+            <a href="#snake"><button>Play</button></a>
+        </div>
+
+        <div class="game-card">
+            <h3>Block World 3D</h3>
+            <p>Minecraft-style sandbox in your browser.</p>
+            <a href="minecraft.html"><button>Play</button></a>
+        </div>
+
+    </div>
+
+    <!-- Snake Game Section -->
+    <div id="snake" class="game-container">
         <canvas id="gameCanvas"></canvas>
         <button onclick="startGame()">Start Game</button>
     </div>
+
 </section>
-
-<footer>
-    © 2026 FreePlay Games. All rights reserved.
-</footer>
-
-<script src="script.js"></script>
-</body>
-</html>
